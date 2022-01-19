@@ -1,2 +1,3 @@
-# guess_the_temperature
-guess the temperature change (1915 ~ 2015)
+# Classwork of Information visualization
+
+[course link](https://www.coursera.org/learn/information-visualization-programming-d3js/home/welcome)
