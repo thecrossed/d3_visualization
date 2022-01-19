@@ -1,17 +1,24 @@
+
+let itemlist = d3.select("#itemlist")
+
+function count(){
+    return itemlist.selectAll("li").size()
+}
+
 function change1(){
-  let p = d3.select(".main-paragraph")
-  p.text("New Text")
+  let c = count() + 1;
+  itemlist
+    .append("li")
+    .text("Item " + c)
 }
 
 function change2(){
-  d3.selectAll("p").text("New Text 2")
-}
-
-function change3(){
-
+  itemlist.selectAll("li").remove()
 }
 
   
-function change4(){
+function change3(){
+  itemlist.select("li:last-child")
+  .remove()
 
 }
